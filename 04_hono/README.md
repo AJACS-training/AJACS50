@@ -1,4 +1,6 @@
-# 遺伝子発現DB・解析ツールの紹介 　　担当: <a href="https://sites.google.com/a/dbcls.rois.ac.jp/hono/" rel="nofollow">小野 浩雅</a>
+<p><a href="http://MotDB.DBCLS.jp/?AJACS50" title="AJACS50 (1249d)">AJACS50</a></p>
+<p><span style="font-size:25px;display:inline-block;line-height:130%;text-indent:0px">遺伝子発現DB・解析ツールの紹介</span>　　　　担当: <a href="https://sites.google.com/a/dbcls.rois.ac.jp/hono/" rel="nofollow">小野 浩雅</a>
+<br /></p>
 <p>目次</p>
 <div class="contents">
 <a id="contents_1"></a>
@@ -138,7 +140,7 @@
 <h4 id="content_1_11"><a id="wd2c65be" href="" title="wd2c65be">_</a> マイクロアレイデータの準備  </h4>
 <p>サンプルデータとして、<a href="http://www.ncbi.nlm.nih.gov/geo/" rel="nofollow">NCBI GEO</a>より取得した公共の遺伝子発現データを用います。このデータは、ある実験の前後の2群間で有意に発現減少した遺伝子群のリストです。
 <br class="spacer" />
-→ <a href="http://motdb.dbcls.jp/?plugin=attach&amp;refer=AJACS24%2Fhono&amp;openfile=110208_IDlist.txt" rel="nofollow">マル秘遺伝子リスト</a>
+→ <a href="110208_IDlist.txt" rel="nofollow">マル秘遺伝子リスト</a>
 <br class="spacer" />
 （右クリックして「新しいタブで開く」もしくは「名前を付けてリンク先を保存」してください。）
 <br class="spacer" />
@@ -156,71 +158,7 @@
 <li>7. 「Gene Ontology」をクリックすると、Gene Ontologyを用いた解析の細かいメニューが表示されます。</li>
 <li>8. 今回は、GOTERM_BP_FAT (BP=Biological Process)に注目します。その右の「Chart」をクリックすると結果がポップアップされます。</li>
 <li>9. P-value を2回クリックしてp-valueが小さい（統計的に有意である）順にしてみましょう … p-value小さい順は、一度やればしばらく覚えているので、次からはしばらくは必要ないです
-<style type="text/css">
-.plugin_fold_title_plus {
-	margin: 0; padding: 0 0 0 17px;
-	background: transparent url(image/728.gif) no-repeat scroll left top;
-}
-.plugin_fold_title_minus {
-	margin: 0; padding: 0 0 0 17px;
-	background: transparent url(image/729.gif) no-repeat scroll left top;
-}
-.plugin_fold_body {
-	display: none;
-	margin: 0 0 5px 17px; padding: 1em;
-	border-top: 1px solid gray;
-	border-left: 1px solid gray;
-	background-color: #f0f8ff;
-}
-</style><script type="text/javascript">
-function plugin_fold_onclick(titleElement, event, anchor) {
-	var evt = event || window.event;
-
-	if (!evt.altKey && !evt.shiftKey) {
-		plugin_fold_toggle(titleElement);
-	} else { // all fold / unfold
-		plugin_fold_toggleAll(titleElement);
-		location.hash = "#" + anchor; // scroll to anchor
-	}
-	return false;
-}
-function plugin_fold_toggle(titleElement) {
-	var body = plugin_fold_searchBodyElement(titleElement);
-	var disp = (body.style.display == "block");
-	titleElement.className = (disp) ? "plugin_fold_title_plus" : "plugin_fold_title_minus";
-	body.style.display = (disp) ? "none" : "block";
-}
-function plugin_fold_toggleAll(titleElement) {
-	var body;
-	var disp = (plugin_fold_searchBodyElement(titleElement).style.display == "block");
-	var titles = plugin_fold_enumTitleElement(), i = 0;
-	for (; i < titles.length; ++i) {
-		body = plugin_fold_searchBodyElement(titles[i]);
-		titles[i].className = (disp) ? "plugin_fold_title_plus" : "plugin_fold_title_minus";
-		body.style.display = (disp) ? "none" : "block";
-	}
-}
-function plugin_fold_enumTitleElement() {
-	var rv = [], n = document.getElementsByTagName("*");
-	var rx = new RegExp("(?:^|\s)plugin_fold_title_(?:plus|minus)(?:\s|$)"), i;
-	for (i in n) {
-		if (n[i].className && rx.test(n[i].className)) {
-			rv.push(n[i]);
-		}
-	}
-	return rv;
-}
-function plugin_fold_searchBodyElement(titleElement) {
-	var rv = titleElement;
-	while (rv) {
-		rv = rv.nextSibling;
-		if (rv.nodeType == 3) { continue; } // skip text node
-		if (rv.className != "plugin_fold_body") { continue; }
-		break;
-	}
-	return rv;
-}
-</script><a name="plugin_fold_anchor1"></a>
+<a name="plugin_fold_anchor1"></a>
 <div class="plugin_fold_title_plus" onclick="return plugin_fold_onclick(this,event,'plugin_fold_anchor1')"><p>結果</p>
 </div>
 <div class="plugin_fold_body"><div class="img_margin" style="text-align:left"><a href="http://MotDB.DBCLS.jp/?plugin=attach&amp;refer=AJACS24%2Fhono&amp;openfile=david_go_bp.png" title="david_go_bp.png"><img src="http://MotDB.DBCLS.jp/?plugin=ref&amp;page=AJACS24%2Fhono&amp;src=david_go_bp.png" alt="david_go_bp.png" title="david_go_bp.png" width="989" height="833" /></a></div>
@@ -252,7 +190,7 @@ function plugin_fold_searchBodyElement(titleElement) {
 <p><br class="spacer" /></p>
 <ul class="list1" style="padding-left:16px;margin-left:16px"><li>その後、Entrez Gene ID行のみに整形したテキストファイルをPANTHERにSubmitします。
 <br class="spacer" />
-→ <a href="http://motdb.dbcls.jp/?plugin=attach&amp;pcmd=open&amp;file=affy_to_geneid.txt&amp;refer=AJACS35%2Fhono" rel="nofollow">変換済みマル秘遺伝子リスト</a>
+→ <a href="affy_to_geneid.txt" rel="nofollow">変換済みマル秘遺伝子リスト</a>
 <br class="spacer" /></li></ul>
 
 <h4 id="content_1_14"><a id="t120060f" href="" title="t120060f">_</a> 【実習3-2】PANTHERを用いて、発現データの結果を生物学的に解釈する  </h4>
@@ -268,7 +206,7 @@ function plugin_fold_searchBodyElement(titleElement) {
 <li>9. Launch Analysisをクリックして分析結果を表示します。</li>
 <li>7. まず、P-valueの昇順でリストが表示されます。どのようなGO termが上位に来ているでしょうか。またそれらをDAVIDと比較してみましょう。</li>
 <li>8. [応用編] Viewを切り替えて、さまざまなグラフ形式で解析結果を見てみましょう。生物学的にどういうことが言えるでしょうか。</li>
-<li>9. その他のデータではどのような結果が表示されるでしょうか。<a href="http://motdb.dbcls.jp/?plugin=attach&amp;pcmd=open&amp;file=gse1657_adipo_up500_geneid.txt&amp;refer=AJACS38%2Fhono2" rel="nofollow">参考動画で使われているヒトの脂肪細胞の分化過程(GSE1657)で発現増加した上位500個の遺伝子群のEntrez Gene IDリスト</a></li></ul>
+<li>9. その他のデータではどのような結果が表示されるでしょうか。<a href="gse1657_adipo_up500_geneid.txt rel="nofollow">参考動画で使われているヒトの脂肪細胞の分化過程(GSE1657)で発現増加した上位500個の遺伝子群のEntrez Gene IDリスト</a></li></ul>
 <hr class="full_hr" />
 
 <h3 id="content_1_15"><a id="n6fd3a54" href="" title="n6fd3a54"><span class="sanchor">_</span></a> NCBI GEOを用いたマイクロアレイデータ解析 (データの検索・生データの取得・統計解析・可視化)  </h3>
