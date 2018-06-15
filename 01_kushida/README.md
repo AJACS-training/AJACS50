@@ -1,1 +1,2 @@
-
+- [講習会資料](AJACS50_NBDC140912.pdf)
+- [横断検索（講習会用）](http://biosciencedbc.jp/dbsearch_new/)
